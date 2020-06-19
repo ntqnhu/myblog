@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/home.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <title >Đăng Ký</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="Home.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="myblog.html">Blog của tôi</a></li>
+                        <li><a href="home.html">Blog cuộc sống</a></li>
+                        <li>
+                            <form>
+                                <input id="mysearch" class="form-control form-control-lm mr-3 w-60" type="text"
+                                    placeholder="Search..." aria-label="Search">
+                                <button type="button" class="btn btn-success btn-block"><i class="fas fa-search"
+                                        style="color: white;"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="container">
+                <div id="id02" class="form-register">
+                    <form  enctype="multipart/form-data">
+                         <h1><b>ĐĂNG KÝ</b></h1>
+                        <div class="form-group">
+                            <input class="form-control username" id="usn" style="border-radius: 20px; height: 50px;"
+                                placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control username" id="mail"
+                                style="border-radius: 20px; height: 50px;" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="psw" placeholder="Mật khẩu"
+                                style= "border-radius: 20px;height: 50px;">
+                        </div>
+                        <div class="form-group">
+                            <label>Avatar</label>
+                            <input type="file" class="form-control"placeholder="Avatar" id="img">
+                        </div>
+                        <button type="login" class="btn btn-danger" style="border-radius: 20px;" id="submit">Đăng ký</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bot">
+        <div class="summary">
+            <div class="container">
+                <div class="st-post">
+                    <h2>tiêu đề</h2>
+                    <img src="https://i.picsum.photos/id/92/1000/1000.jpg">
+                </div>
+                <div class="popular-post">
+                    <h2>Bài viết phổ biến</h2>
+                    <ul>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+
+                    </ul>
+                </div>
+                <div class="popular-author">
+                    <h2>Tác giả phổ biến</h2>
+                    <div class="l">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                    </div>
+                    <div class="l">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="s-network">
+                    <h1 class="lang" key="connect_us">KẾT NỐI VỚI CHÚNG TÔI</h1>
+                    <div class="logos-icon">
+                        <a href=""> <i class="fab fa-facebook-f" style="color: #1B1F78;"></i></a>
+                        <a href=""><i class="fab fa-instagram" style="color: #1B1F78;"></i></a>
+                        <a href=""><i class="fab fa-twitter" style="color: #1B1F78;"></i></a>
+                        <a href=""><i class="fab fa-xing" style="color: #740A86;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/register.js"></script>
+</html>

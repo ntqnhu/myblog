@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/home.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!-- Styles -->
+    <title>My Blog</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="Home.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="myblog.html">Blog của tôi</a></li>
+                        <li><a href="home.html">Blog cuộc sống</a></li>
+                        <li>
+                            <form>
+                                <input id="mysearch" class="form-control form-control-lm mr-3 w-60" type="text"
+                                    placeholder="Search..." aria-label="Search">
+                                <button type="button" class="btn btn-success btn-block"><i class="fas fa-search"
+                                        style="color: white;"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="support-line">
+            <div class="container">
+                <div class="support-left">
+                    <button class='btn-success btn-sm' onClick='Send()' data-toggle='modal'>GỬI BÀI<i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
+                </div>
+                <div class="support-right">
+                    <ul>
+                        <li>
+                            <div id="ava">
+
+                            </div>
+                            <h4 class="current-user lang" key= "hello" style="transform: translate(10px,10px);">Xin chào ,<h4 id="usname" style="transform: translate(10px,10px);"></h4>
+                            </h4>
+                        </li>
+                        <li><i class="fas fa-caret-down drop-down icon"style="transform: translateY(10px);"></i>
+                            <ul class="dropdown">
+                                <li>
+                                    <i class="fas fa-user-edit"></i>
+                                    <a href="edit.html" >Thông tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <a href="" id="out" >Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="tt">
+                    <div class="form-tt">
+                        <form  enctype="multipart/form-data">
+                            <div class="form-title">
+                                <h1 class="lang" key="ccq_infor">THÔNG TIN BÀI VIẾT</h1>
+                            </div>
+                            <div class="form-group">
+                                <div class="fg-child ">
+                                    <label>Tác giả</label>
+                                    <div class="text">
+                                        <p id="authur"></p>
+                                    </div>
+                                </div>
+                                <div class="fg-child">
+                                    <label>Thời gian</label>
+                                    <div class="text">
+                                        <p id="date"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fgroup">
+                                <label>Loại bài viết</label>
+                                <select class="form-control" id="type">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="fg-child">
+                                    <label >Tiêu đề</label>
+                                    <input  id="title" style=" height: 40px;"
+                                        placeholder="Nhập tiêu đề">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fg-child">
+                                    <label>Nội dung tóm tắt</label>
+                                    <textarea rows="5" cols="20" id="mainContent"></textarea>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fg-child">
+                                    <label>Nội dung</label>
+                                    <textarea rows="7" cols="20" id="content"></textarea>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fg-child">
+                                    <label>Ảnh</label>
+                                    <input type="file" class="form-control" placeholder="Avatar" id="img">
+                                </div>
+                            </div>
+                            <button class="btn btn-success" style="border-radius: 10px; width: 100px;transform: translateX(400%);margin-top: 30px;" id="add">Thêm</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bot">
+        <div class="summary">
+            <div class="container">
+                <div class="st-post">
+                    <h2>tiêu đề</h2>
+                    <img src="https://i.picsum.photos/id/92/1000/1000.jpg">
+                </div>
+                <div class="popular-post">
+                    <h2>Bài viết phổ biến</h2>
+                    <ul>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+                        <li><i class="far fa-hand-point-right"></i>
+                            <a href="">tiêu đề bài viết</a></li>
+
+                    </ul>
+                </div>
+                <div class="popular-author">
+                    <h2>Tác giả phổ biến</h2>
+                    <div class="l">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                    </div>
+                    <div class="l">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                        <img src="https://i.picsum.photos/id/92/1000/1000.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="s-network">
+                    <h1 class="lang" key="connect_us">KẾT NỐI VỚI CHÚNG TÔI</h1>
+                    <div class="logos-icon">
+                        <a href=""> <i class="fab fa-facebook-f" style="color: #1B1F78;"></i></a>
+                        <a href=""><i class="fab fa-instagram" style="color: #1B1F78;"></i></a>
+                        <a href=""><i class="fab fa-twitter" style="color: #1B1F78;"></i></a>
+                        <a href=""><i class="fab fa-xing" style="color: #740A86;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/addpost.js"></script>
+</html>
