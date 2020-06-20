@@ -36,7 +36,7 @@ $('#submit').click(async function (e) {
     var { success } = info;
     if (success) {
         toastr.success("Tạo tài khoản thành công!");
-        window.location = "https://ntqnhu.github.io/login.html";
+        window.location = "https://ntqnhu.github.io/myblog/login.html";
     }
     else {
         var { message } = info;

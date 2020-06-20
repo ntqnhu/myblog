@@ -1,7 +1,7 @@
 let Username = sessionStorage.getItem('username');
 let token = sessionStorage.getItem('token');
 if (!token) {
-    window.location = "https://ntqnhu.github.io/login.html";
+    window.location = "https://ntqnhu.github.io/myblog/login.html";
 }
 else {
     $.ajax({
@@ -103,7 +103,7 @@ $(document).on('click', '#add', async function (e) {
 
     if (success) {
         toastr.error("Thêm thành công!");
-        window.location = "https://ntqnhu.github.io/myblog.html";
+        window.location = "https://ntqnhu.github.io/myblog/home.html";
 
     }
     else {
@@ -246,27 +246,27 @@ function setPopular_author(list) {
 function Send() {
     sessionStorage.setItem('history', 'post');
     if (!token) {
-        window.location = "https://ntqnhu.github.io/login.html";
+        window.location = "https://ntqnhu.github.io/myblog/login.html";
     }
     else {
-        window.location = "https://ntqnhu.github.io/addpost.html";
+        window.location = "https://ntqnhu.github.io/myblog/addpost.html";
     }
 }
 function Seen(blog) {
     sessionStorage.setItem('postid', $(blog).data('id'));
-    window.location = "https://ntqnhu.github.io/blog.html";
+    window.location = "https://ntqnhu.github.io/myblog/blog.html";
 }
 $(document).on('click', '#bestpost', function (e) {
     e.preventDefault();
     sessionStorage.setItem('postid', id);
-    window.location = "https://ntqnhu.github.io/blog.html";
+    window.location = "https://ntqnhu.github.io//myblog/blog.html";
 });
 $(document).on('click', '#out', function (e) {
     e.preventDefault();
     sessionStorage.setItem('username', "");
     sessionStorage.setItem('token', "");
     sessionStorage.setItem('id', "");
-    window.location = "https://ntqnhu.github.io/home.html";
+    window.location = "https://ntqnhu.github.io/myblog/home.html";
 
 });
 
@@ -281,13 +281,13 @@ function checkImg(img){
 
 function Seen(blog){
     sessionStorage.setItem('id',$(blog).data('id'));
-    window.location = "https://ntqnhu.github.io/blog.html";
+    window.location = "https://ntqnhu.github.io/myblog/blog.html";
 }
 $(document).on('click', '#out', function (e) {
     e.preventDefault();
     sessionStorage.setItem('username', "");
     sessionStorage.setItem('token', "");
     sessionStorage.setItem('id', "");
-    window.location = "https://ntqnhu.github.io/home.html";
+    window.location = "https://ntqnhu.github.io/myblog/home.html";
 
 });
