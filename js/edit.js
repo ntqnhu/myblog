@@ -2,7 +2,7 @@ let Username = sessionStorage.getItem('username');
 let token = sessionStorage.getItem('token');
 
 if (!token) {
-    window.location = "http://127.0.0.1:5500/login.html";
+    window.location = "https://ntqnhu.github.io/login.html";
 }
 else {
     $.ajax({
@@ -273,17 +273,17 @@ function setPopular_author(list) {
 function Send() {
     sessionStorage.setItem('history', 'post');
     if (!token) {
-        window.location = "http://127.0.0.1:5500/login.html";
+        window.location = "https://ntqnhu.github.io/login.html";
     }
     else {
-        window.location = "http://127.0.0.1:5500/addpost.html";
+        window.location = "https://ntqnhu.github.io/addpost.html";
     }
 }
 
 $(document).on('click', '#bestpost', function (e) {
     e.preventDefault();
     sessionStorage.setItem('postid', id);
-    window.location = "http://127.0.0.1:5500/blog.html";
+    window.location = "https://ntqnhu.github.io/blog.html";
 });
 
 
@@ -301,6 +301,6 @@ $(document).on('click', '#out', function (e) {
     sessionStorage.setItem('username', "");
     sessionStorage.setItem('token', "");
     sessionStorage.setItem('id', "");
-    window.location = "http://127.0.0.1:5500/home.html";
+    window.location = "https://ntqnhu.github.io/home.html";
 
 });
